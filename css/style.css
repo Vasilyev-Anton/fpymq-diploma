@@ -4,6 +4,7 @@ h1 {
 }
 
 div {
+    display: flex;
     width: vmin 10;
     border: solid 1px #fff;
     background-color: black;
