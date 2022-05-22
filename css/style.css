@@ -1,11 +1,9 @@
-h1 {
-    color: red;
-    
-}
-
-div {
-    display: flex;
-    width: 500px;
-    border: solid 1px #fff;
-    background-color: black;
+.page-header {
+background-image: url(images\banner-bg.jpg);
+display: flex;
+height: 120px;
+min-width: 120px;
+align-items: center;
+color: #fff;
+text-shadow: #000 0 0 .2em;
 }
