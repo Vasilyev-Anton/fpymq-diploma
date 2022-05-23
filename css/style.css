@@ -1,4 +1,23 @@
 /* body (max-width: 768px) {} */
+
+@font-face {
+    font-family:"OpenSans-Regular"; 
+    src: url("../fonts/OpenSans-Regular.woff") format("woff"); 
+    src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+    
+@font-face {
+    font-family:"OpenSans-Bold"; 
+    src: url("../fonts/OpenSans-Bold.woff") format("woff"); 
+    src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
+    src: url("../fonts/OpenSans-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: bold; 
+}
+
 body {
     position: absolute;
     width: 774px;
@@ -21,7 +40,7 @@ body {
     height: 449px;
 }
 
-.page-header:after {
+.page-header:after, .category::after {
     content: "";
     position: absolute;
     left: 0;
@@ -159,7 +178,7 @@ body {
     margin: 0 0 0 35px;
 }
 
-.post {
+.post, .price-block {
     display: flex;
     flex-wrap: wrap;
 }
