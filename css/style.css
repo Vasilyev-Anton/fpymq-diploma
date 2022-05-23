@@ -34,10 +34,12 @@ body {
     display: flex;
     position: relative;
     align-items: center;
-    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 449px;
+    font-family: OpenSans-Bold;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .page-header:after, .category::after {
@@ -52,11 +54,9 @@ body {
 }
 
 .intro {
-    width: 604px;
-    height: 86px;
     font-size: 2.5rem;
     color: #ffffff;
-    margin-left: 87px;
+    margin: 0 80px;
     z-index: 1;
 }
 
@@ -120,21 +120,9 @@ body {
     width: calc(50% - 2px);
     height: 247px;
     box-sizing: border-box;
-    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     margin-bottom: 4px;
-}
-
-.category::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    opacity: 0.5;
 }
 
 .category-border {
@@ -170,6 +158,7 @@ body {
 .news {
     position: relative;
     display: flex;
+    margin-bottom: 40px;
 }
 
 .post-list {
@@ -231,11 +220,14 @@ body {
 
 .title-bar {
     font-size: 14px;
+    font-family: OpenSans-Bold;
     margin: 0;
 }
 
 .double {
-    margin-top: 0;
+    font-size: 14px;
+    font-family: OpenSans-Regular;
+    margin-top: 4px;
 }
 
 .side-bar-post {
@@ -268,6 +260,8 @@ body {
     height: 48px;
     background-color: #f4f7f6;
     border: none;
+    font-family: OpenSans-Regular;
+    font-size: 13px;
 }
 
 .search-button {
@@ -312,6 +306,7 @@ body {
 
 .title-bar-tag {
     font-size: 12px;
+    font-family: OpenSans-Bold;
     padding: 5px 14px;
 }
 
@@ -322,24 +317,6 @@ body {
 .category-title {
     font-size: 14px;
     font-family: OpenSans-Bold;
-}
-
-@font-face {
-    font-family:"OpenSans-Regular"; 
-    src: url("../fonts/OpenSans-Regular.woff") format("woff"); 
-    src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
-    src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-}
-    
-@font-face {
-    font-family:"OpenSans-Bold"; 
-    src: url("../fonts/OpenSans-Bold.woff") format("woff"); 
-    src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
-    src: url("../fonts/OpenSans-Bold.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: bold; 
 }
 
 .shop {
@@ -393,10 +370,6 @@ body {
     width: 140px;
     position: absolute;
     right: 35px;
-}
-
-.price-block {
-    display: flex;
 }
 
 .price {
