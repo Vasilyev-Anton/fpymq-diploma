@@ -41,7 +41,6 @@ body {
 .header-box {
     display: flex;
     width: 100%;
-    /* height: auto; */
     box-sizing: border-box;
     position: absolute;
     top: 43px;
