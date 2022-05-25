@@ -16,12 +16,11 @@
     font-weight: bold; 
 }
 
-@media (max-width: 768px) {}
-body {
+@media (max-width: 768px) {
+    body {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    width: 768px;
+}
 }
 
 .page-header {
