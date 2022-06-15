@@ -74,7 +74,77 @@ body {
     z-index: 1;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 640px) and (orientation: portrait) {
+    .header{
+        background-image: url(../images/banner-mobile.jpg);
+    }
+
+    .header-menu {
+        top: 43px;
+        margin: 0 35px 104px 35px;
+    }
+
+    .logo {
+        width: 158px;
+        height: 36px;
+    }
+
+    .intro {
+        width: 604px;
+        font-size: 40px;
+        margin-bottom: 126px;
+    }
+    
+    .item {
+        display: none;
+    }
+
+    .category {
+        width: calc(100% - 2px);
+    }
+
+    .cat1, .cat2 {
+        margin-bottom: 2px;
+    }
+
+    .cat3, .cat4 {
+        margin-top: 2px;
+    }
+
+    .pic1 {
+        background: url(../images/shop-item-mobile1.jpg);
+    }
+
+    .pic2 {
+        background: url(../images/shop-item-mobile2.jpg);
+    }
+
+    .pic3 {
+        background: url(../images/shop-item-mobile3.jpg);
+    }
+
+    .pic1, .pic2, .pic3 {
+        position: relative;
+        width: 292px;
+        height: 227px;
+    }
+
+    .shop {
+        width: calc(100% - 11px);
+    }
+
+    .frame {
+        width: 338px;
+        height: 264px;
+    }
+
+    .article-list {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width: 641px) and (max-width: 1199px), (max-width: 640px) and (orientation: landscape) {
     .header{
         background-image: url(../images/banner-bg-tablet.jpg);
     }
