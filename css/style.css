@@ -18,6 +18,13 @@
 
 body {
     font-family: OpenSans-Bold;
+    font-size: 17px;
+}
+
+h2, h3, h4 {
+    font-family: OpenSans-Bold;
+    font-size: inherit;
+    margin-block: 0;
 }
 
 .header, .category {
@@ -61,6 +68,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
+    margin-right: 35px;
 }
 
 .btn-close {
@@ -89,12 +97,12 @@ body {
         height: 36px;
     }
 
-    .intro {
-        width: 604px;
-        font-size: 40px;
+    .intro > .title {
+        width: 100%;
+        font-size: 5vmin;
         margin-bottom: 126px;
     }
-    
+
     .item {
         display: none;
     }
@@ -111,6 +119,10 @@ body {
         margin-top: 2px;
     }
 
+    .category > .category-border {
+        margin: 0 50px 20px;
+    }
+
     .pic1 {
         background: url(../images/shop-item-mobile1.jpg);
     }
@@ -123,19 +135,8 @@ body {
         background: url(../images/shop-item-mobile3.jpg);
     }
 
-    .pic1, .pic2, .pic3 {
-        position: relative;
-        width: 292px;
-        height: 227px;
-    }
-
     .shop {
         width: calc(100% - 11px);
-    }
-
-    .frame {
-        width: 338px;
-        height: 264px;
     }
 
     .article-list {
@@ -159,7 +160,7 @@ body {
         height: 36px;
     }
 
-    .intro {
+    .intro > .title {
         width: 604px;
         font-size: 40px;
         margin-bottom: 126px;
@@ -197,23 +198,22 @@ body {
         background: url(../images/shop-item-tablet3.jpg);
     }
 
-    .pic1, .pic2, .pic3 {
-        position: relative;
-        width: 292px;
-        height: 227px;
-    }
-
+   
     .shop {
         width: calc(50% - 11px);
     }
 
-    .frame {
-        width: 338px;
-        height: 264px;
-    }
 }
 
 @media (min-width: 1200px) {
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 14px;
+    }
+
     .header{
         background-image: url(../images/banner-bg.jpg);
     }
@@ -232,7 +232,7 @@ body {
         display: none;
     }
 
-    .intro {
+    .intro > .title {
         width: 679px;
         font-size: 45px;
         margin-bottom: 146px;
@@ -252,10 +252,6 @@ body {
         flex-wrap: wrap;
     }
 
-    .tags {
-        order: -1;
-    }
-
     .pic1 {
         background: url(../images/shop-item-desk1.jpg);
     }
@@ -268,8 +264,7 @@ body {
         background: url(../images/shop-item-desk3.jpg);
     }
 
-    .pic1, .pic2, .pic3 {
-        position: relative;
+    .shop > .pic1, .shop > .pic2, .shop > .pic3 {
         width: 300px;
         height: 205px;
     }
@@ -278,9 +273,8 @@ body {
         width: calc(100%/3 - 33px);
     }
 
-    .frame {
+    .shop > .frame {
         width: 347px;
-        height: 267px;
     }
 }
 
@@ -322,7 +316,7 @@ body {
 }
 
 .title-line {
-    margin: 14px auto 18px;
+    margin: 9px auto 18px;
     width: 67px;
     height: 4px;
     background: #e1d9bd;
@@ -379,11 +373,13 @@ main, footer {
     min-width: 275px;
     max-width: 275px;
     margin-left: 5px;
+    font-size: 14px;
 }
 
 .text {
     font-family: OpenSans-Regular;
     font-size: 15px;
+    line-height: 22px;
 }
 
 .date {
@@ -466,10 +462,10 @@ main, footer {
 .container-tags {
     display: flex;
     flex-wrap: wrap;
+    font-size: 12px;
 }
 
 .title-bar-tag {
-    font-size: 12px;
     border: 3px solid #eeeeee;
     padding: 8px 14px;
     margin: 3px;
@@ -502,23 +498,35 @@ hr {
 .shop {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     position: relative;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.pic1, .pic2, .pic3 {
+    position: relative;
+    width: 292px;
+    height: 227px;
+    margin: auto;
 }
 
 .frame {
-    top: -29px;
     position: relative;
+    top: -29px;
     border: 3px solid #d3c59d;
+    padding: 54px 20px 26px;
+    width: 338px;
+    height: 290px;
+    margin: auto;
     box-sizing: border-box;
-    padding: 54px 20px 0 20px;
 }
 
 .price-block {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 23px;
+    margin-top: 26px;
 }
 
 .price {
